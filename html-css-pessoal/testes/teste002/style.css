@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --cor01: rgb(230, 230, 230);
+    --cor02: rgb(98, 0, 255);
+    --fonte01: "Space Grotesk", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.d1, .d2, .d3, .d4, .d5 {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    margin: 5px;
+    text-align: center;
+}
+
+.d1 {
+    background-color: lightblue;
+}
+
+.d2 {
+    background-color: lightyellow;
+}
+
+.d3 {
+    background-color: lightgreen;
+    flex-basis: 20%;
+}
+
+.d4 {
+    background-color: lightcoral;
+}
+
+.d5 {
+    background-color: lightpink;
+}
+
+.content {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    margin: 0px 10px;
+}
+
+.menu {
+    font-family: var(--fonte01);
+    display: flex;
+    min-width: 350px;
+    max-width: 400px;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    background-color: var(--cor01);
+    border-radius: 10px;
+}
+
+.menu div {
+    padding: 10px;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}

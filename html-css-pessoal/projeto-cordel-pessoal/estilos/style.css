@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte01: 'Passion One', sans-serif;
+    --fonte02: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+header h1 {
+    font-family: var(--fonte01);
+    font-size: 8vw;
+}
+
+header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+header a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: black;
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main p {
+    font-family: var(--fonte02);
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding: 40px 10px;
+}
+
+main section {
+    background-color: white;
+    padding: 60px 20px 100px 20px;
+}
+
+.especial {
+    background-color: transparent;
+    color: white;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.548) inset;
+}
+
+.especial p {
+    background-color: rgba(0, 0, 0, 0.411);
+    margin: 30px 0px;
+    padding: 5px;
+    width: 45%;
+}
+
+.paralax {
+    background-color: black;
+    background-image: url('../imagens/background002.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+footer p {
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    text-align: justify;
+}

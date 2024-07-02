@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Plus';
+    src: url(fontes/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: 'Plus', sans-serif;
+}
+
+body {
+    display: grid;
+    background-color: #590dff;
+}
+
+nav {
+    position: relative;
+    background: #2E038C;
+    color: white;
+    height: 76px;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .img {
+    display: flex;
+    position: relative;
+}
+
+nav .item {
+    display: block;
+    padding: 30px 36px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav .item:hover {
+    font-weight: 700;
+    color: #590dff;
+}
+
+main {
+    top: 20px;
+    position: relative;
+    background-color: #150140;
+    color: white;
+    width: 80%;
+    padding: 5%;
+    margin: auto;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 3px 5px #5005F2;
+}
+
+h2 {
+    color: #5005F2;
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.445);
+}
+
+p {
+    font-weight: 100;
+    text-indent: 10px;
+}
+
+input {
+    border-radius: 15px;
+    padding: 10px;
+    width: 95%;
+}
+
+li.custom{
+    display: block;
+    text-indent: -30px;
+}
+
+li.custom::before {
+    content: ">> ";
+}
+
+/* Color Theme Swatches in Hex */
+.Outschool-1-hex { color: #5005F2; }
+.Outschool-2-hex { color: #4804D9; }
+.Outschool-3-hex { color: #2E038C; }
+.Outschool-4-hex { color: #150140; }
+.Outschool-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Outschool-1-rgba { color: rgba(80, 5, 242, 1); }
+.Outschool-2-rgba { color: rgba(72, 4, 217, 1); }
+.Outschool-3-rgba { color: rgba(46, 3, 140, 1); }
+.Outschool-4-rgba { color: rgba(21, 1, 64, 1); }
+.Outschool-5-rgba { color: rgba(13, 13, 13, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Outschool-1-hsla { color: hsla(258, 95, 48, 1); }
+.Outschool-2-hsla { color: hsla(259, 96, 43, 1); }
+.Outschool-3-hsla { color: hsla(258, 95, 28, 1); }
+.Outschool-4-hsla { color: hsla(259, 96, 12, 1); }
+.Outschool-5-hsla { color: hsla(0, 0, 5, 1); }
