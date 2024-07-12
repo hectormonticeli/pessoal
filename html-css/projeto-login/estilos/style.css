@@ -55,3 +55,32 @@ section#login p#normal {
     text-align: left;
 }
 
+section#login p.botao {
+    color: white;
+    background-color: #D90429;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+section#login input {
+    border: none;
+}
+
+section#login input#iemail, input#isenha {
+    display: inline;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.material-icons {
+    font-size: 32px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+section#login input#entrar {
+    width: 100%;
+    border-radius: 10px;
+}
+
