@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* Mobile First */
+
+:root {
+    --cor01: #D90429;
+    --cor02: #EF233C;
+    --cor03: #2B2D42;
+    --cor04: #8D99AE;
+    --cor05: #EDF2F4;
+}
