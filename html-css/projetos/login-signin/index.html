@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="estilos/principal.css">
+    <link rel="stylesheet" href="estilos/header.css">
+    <link rel="stylesheet" href="estilos/main.css">
 </head>
+
 <body>
     <header>
-        <h1>REDshoes</h1>
+        <h1>REDshoe</h1>
 
-        <div class="button-menu">
-            <span class="material-icons">menu</span>
-            <span class="material-icons">close</span>
+        <div class="button-menu" onclick="clickMenuLogin()">
+            <span class="material-icons" id="open">menu</span>
+            <span class="material-icons" id="close">close</span>
         </div>
 
-        <menu id="login-singup">
+        <menu id="login-signup">
             <ul>
                 <li><a href="login-signup.html">Login</a></li>
                 <li><a href="login-signup.html">Sign up</a></li>
             </ul>
         </menu>
-
     </header>
 
     <main>
@@ -30,6 +32,7 @@
         <section id="principal">
 
             <menu id="filter">
+                Filter by:
                 <ul>
                     <li class="brand">Mizuno</li>
                     <li class="brand">Nike</li>
@@ -39,20 +42,93 @@
                     <li class="type">Basketball</li>
                     <li class="type">Football</li>
                 </ul>
-            </menu>        
-            
+            </menu>
+
             <article id="shoes">
 
-                <div class="card"></div>
-            
+                <div class="card" class="mizuno">
+                    <img src="" alt="">
+                </div>
+                <div class="card" class="mizuno">
+                    <img src="" alt="">
+                </div>
+                <div class="card" class="mizuno">
+                    <img src="" alt="">
+                </div>
+
+                <div class="card" class="nike">
+                    <img src="" alt="">
+                </div>
+                <div class="card" class="nike">
+                    <img src="" alt="">
+                </div>
+                <div class="card" class="nike">
+                    <img src="" alt="">
+                </div>
+                <div class="card" class="nike">
+                    <img src="" alt="">
+                </div>
+                <div class="card" class="nike">
+                    <img src="" alt="">
+                </div>
+
+                <div class="card" class="adidas">
+                    <img src="" alt="">
+                </div>
+                <div class="card" class="adidas">
+                    <img src="" alt="">
+                </div>
+                <div class="card" class="adidas">
+                    <img src="" alt="">
+                </div>
+
+                <div class="card" class="umbro">
+                    <img src="" alt="">
+                </div>
+                <div class="card" class="umbro">
+                    <img src="" alt="">
+                </div>
+                <div class="card" class="umbro">
+                    <img src="" alt="">
+                </div>
+
             </article>
 
         </section>
 
 
     </main>
-    <footer>
 
+    <footer>
+        <h2>Brands</h2>
+
+        <section>
+            <abbr title="Mizuno &#174"><img src="" alt="Mizuno"></abbr>
+            <abbr title="Nike &#174"><img src="" alt="Nike"></abbr>
+            <abbr title="Adidas &#174"><img src="" alt="Adidas"></abbr>
+            <abbr title="Umbro &#174"><img src="" alt="Umbro"></abbr>
+        </section>
+
+        <p>Created by Hector Monticeli Arantes.</p>
     </footer>
+
+    <script>
+        function clickMenuLogin() {
+            openButton = document.getElementById('open');
+            closeButton = document.getElementById('close');
+            menu = document.getElementById('login-signup');
+
+            if (openButton.style.display == 'block') {
+                openButton.style.display = 'none';
+                closeButton.style.display = 'block';
+                menu.style.display = 'block';
+            }
+            else {
+                openButton.style.display = 'block';
+                closeButton.style.display = 'none';
+                menu.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
