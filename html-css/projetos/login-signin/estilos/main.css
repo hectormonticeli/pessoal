@@ -37,18 +37,21 @@ menu#filter {
 
 main ul {
     list-style-type: none;
+    columns: 2;
+    padding: 5px;
 }
 
 main ul > li {
-    display: inline-block;
     padding: 10px;
-    border: 1px solid black;
+    color: var(--vermelho-forte);
     cursor: pointer;
-    transition-duration: .3s;
+    border-radius: 5px;
+    width: 50%;
 }
 
 main ul > li:hover {
     background-color: var(--salmao-medio);
     color: var(--claro);
-
+    transition: .3s;
 }
+

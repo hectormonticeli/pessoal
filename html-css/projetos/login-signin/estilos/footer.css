@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer section {
+
+}
+
+footer abbr {
+    text-decoration: none;
+}
+
+footer img {
+    width: 70px;
+    filter: invert(1);
+    margin: 40px 15px;
+}
+
+footer p {
+    font-size: .8em;
+}

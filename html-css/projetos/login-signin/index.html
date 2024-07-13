@@ -8,9 +8,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/header.css">
     <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="estilos/footer.css">
 </head>
 
 <body>
+
     <header>
         <h1>REDshoe</h1>
 
@@ -103,32 +105,31 @@
         <h2>Brands</h2>
 
         <section>
-            <abbr title="Mizuno &#174"><img src="" alt="Mizuno"></abbr>
-            <abbr title="Nike &#174"><img src="" alt="Nike"></abbr>
-            <abbr title="Adidas &#174"><img src="" alt="Adidas"></abbr>
-            <abbr title="Umbro &#174"><img src="" alt="Umbro"></abbr>
+            <p>
+                <abbr title="Mizuno &#174">
+                    <a href="https://www.mizuno.com.br" target="_blank" rel="external"><img
+                            src="imagens/logos/logo-mizuno.png" alt="Mizuno"></a>
+                </abbr>
+                <abbr title="Nike &#174">
+                    <a href="https://www.nike.com" target="_blank" rel="external"><img src="imagens/logos/logo-nike.png"
+                            alt="Nike"></a>
+                </abbr>
+                <abbr title="Adidas &#174">
+                    <a href="https://www.adidas.com" target="_blank" rel="external"><img
+                            src="imagens/logos/logo-adidas.png" alt="Adidas"></a>
+                </abbr>
+                <abbr title="Umbro &#174">
+                    <a href="https://www.umbro.com" target="_blank" rel="external"><img
+                            src="imagens/logos/logo-umbro.png" alt="Umbro"></a>
+                </abbr>
+            </p>
         </section>
 
         <p>Created by Hector Monticeli Arantes.</p>
     </footer>
 
-    <script>
-        function clickMenuLogin() {
-            openButton = document.getElementById('open');
-            closeButton = document.getElementById('close');
-            menu = document.getElementById('login-signup');
+    <script src="javascript/script.js"></script>
 
-            if (openButton.style.display == 'block') {
-                openButton.style.display = 'none';
-                closeButton.style.display = 'block';
-                menu.style.display = 'block';
-            }
-            else {
-                openButton.style.display = 'block';
-                closeButton.style.display = 'none';
-                menu.style.display = 'none';
-            }
-        }
-    </script>
 </body>
+
 </html>
