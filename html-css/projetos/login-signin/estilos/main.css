@@ -32,26 +32,48 @@ section#principal {
 }
 
 menu#filter {
-    
+    display: flex;
 }
 
 main ul {
     list-style-type: none;
-    columns: 2;
     padding: 5px;
 }
 
 main ul > li {
-    padding: 10px;
+    padding: 10px 30px 10px 10px;
     color: var(--vermelho-forte);
     cursor: pointer;
     border-radius: 5px;
-    width: 50%;
 }
 
 main ul > li:hover {
     background-color: var(--salmao-medio);
     color: var(--claro);
     transition: .3s;
+}
+
+article#shoes {
+    text-align: center;
+}
+
+.card {
+    width: 250px;
+    display: inline-block;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.301);
+    border-radius: 15px;
+    padding: 20px 10px;
+}
+
+.card .img-box {
+    height: 250px;
+    width: 100%;
+}
+
+.card img {
+    width: 90%;
+    
 }
 
