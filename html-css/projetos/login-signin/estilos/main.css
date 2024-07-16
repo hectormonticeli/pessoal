@@ -9,23 +9,6 @@
     src: local('Yamaka Personal Used'), url('../fontes/YamakaPersonalUsed-VGrrx.woff') format('woff');
 }
 
-:root {
-    --vermelho-forte: #D90429;
-    --vermelho: #ED1C24;
-    --vermelho-rosado: #ee4256;
-    --salmao: #DC493A;
-    --salmao-medio: #BB342F;
-    --salmao-escuro: #A22522;
-    --cinza-escuro: #2B2D42;
-    --cinza: #8D99AE;
-    --claro: #EDF2F4;
-    --marrom: #2C0703;
-}
-
-body {
-
-}
-
 section#principal {
     background-color: var(--claro);
     padding: 25px;
