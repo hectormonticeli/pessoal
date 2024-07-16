@@ -80,3 +80,19 @@ article#shoes {
     transform: translate(-50%, -50%);
 }
 
+.card p {
+    text-align: left;
+}
+
+.card .preco {
+    font-size: 1.8em;
+}
+
+.card sup {
+    font-size: .5em;
+}
+
+.card .frete {
+    color: green;
+}
+
