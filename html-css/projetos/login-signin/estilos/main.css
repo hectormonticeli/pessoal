@@ -9,6 +9,10 @@
     src: local('Yamaka Personal Used'), url('../fontes/YamakaPersonalUsed-VGrrx.woff') format('woff');
 }
 
+main {
+    width: 100%;
+}
+
 section#principal {
     background-color: var(--claro);
     padding: 25px;

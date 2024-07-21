@@ -42,7 +42,7 @@ function checked() {
     }
 }
 
-function clickMizuno() {
+/* function clickMizuno() {
     mizunoCards = document.getElementsByClassName("mizuno");
     nikeCards = document.getElementsByClassName("nike");
     adidasCards = document.getElementsByClassName("adidas");
@@ -52,6 +52,6 @@ function clickMizuno() {
     nikeCards.style.display = 'none';
     adidasCards.style.display = 'none';
     umbroCards.style.display = 'none';
-}
+} */
 
 /*  onmouseover="this.style.background = '#BB342F'" onmouseout="if(mizunoClick % 2 == 0){this.style.background = 'transparent'}" */
