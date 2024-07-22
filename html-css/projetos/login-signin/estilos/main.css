@@ -35,7 +35,7 @@ main ul > li {
 }
 
 main ul > li:hover {
-    background-color: var(--salmao-medio);
+    background-color: var(--vermelho-forte);
     color: var(--claro);
     transition: .3s;
 }
