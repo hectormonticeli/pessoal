@@ -29,6 +29,10 @@
         background-attachment: fixed;
     }
 
+    header > h1 {
+        color: var(--vermelho-forte);
+    }
+
     section#principal {
         width: 80%;
         background-color: transparent;
@@ -44,12 +48,22 @@
         background-color: transparent;
     }
 
+
     menu#login-signup > ul > li > a:hover, span#close:hover {
         background-color: var(--vermelho-forte);
     }
 
     section#principal > p {
         color: white;
+    }
+
+    section#principal > menu > ul > li {
+        color: var(--claro);
+    }
+
+    section#principal > menu > ul > li:hover {
+        background-color: white;
+        color: var(--vermelho-forte);
     }
 
     .card {
