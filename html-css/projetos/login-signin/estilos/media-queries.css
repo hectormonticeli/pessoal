@@ -39,9 +39,9 @@
         backdrop-filter: blur(15px);
         box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.116);
         margin: auto;
-        margin-top: 50%;
-        margin-bottom: 50px;
+        margin-top: 50px;
         border-radius: 20px;
+        padding-bottom: 40%;
     }
 
     header {
