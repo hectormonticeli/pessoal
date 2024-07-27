@@ -32,6 +32,17 @@ main {
     position: relative;
 }
 
+main > a {
+    display: block;
+    color: white;
+    padding: 10px;
+}
+
+main > a .material-icons{
+    font-size: 48px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.493);
+}
+
 section {
     position: absolute;
     left: 50%;

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+:root {
+    --tom1: #505050;
+    --tom2: #808080;
+}
+
+main {
+    background-color: var(--tom2);
+}
+
+#imagem {
+    background: url(../imagens/fundos/metal-cinza.jpg) no-repeat left bottom;
+    background-size: cover;
+}
+
+#login input#enviar {
+    border: 2px solid var(--tom1);
+    color: var(--tom1);
+}
+
+#login input#enviar:hover {
+    border: 2px solid var(--vermelho-forte);
+}
+
+#login div.campo {
+    background-color: var(--tom1);
+}

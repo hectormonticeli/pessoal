@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    main {
+        background-image: linear-gradient(to bottom, var(--tom1), var(--tom2));
+    }
+
+    section {
+        height: 340px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    main {
+        background: url(../imagens/fundos/metal-cinza.jpg) no-repeat left bottom;
+        background-size: cover;
+    }
+
+    section {
+        height: 430px;
+    }
+
+    #imagem {
+        background: url(../imagens/fundos/fundo-tenis-branco.jpg) no-repeat center;
+        background-size: cover;
+    }
+}
