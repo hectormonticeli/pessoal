@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px){
+    menu {
+        flex-flow: column wrap;
+        text-align: center;
+    }
+
+    nav {
+        flex-flow: column wrap;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    menu {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    h1, .item {
+        flex: none;
+    }
+
+    nav {
+        flex-flow: row nowrap;
+    }
+}
