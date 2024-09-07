@@ -5,6 +5,19 @@
         flex-flow: column wrap;
         text-align: center;
     }
+/*
+    .item {
+        display: none;
+    }
+    
+    #botao {
+        display: block;
+    }
+
+    #close {
+        display: none;
+    }
+*/
 
     nav {
         flex-flow: column wrap;
@@ -15,6 +28,14 @@
     menu {
         flex-flow: row wrap;
         justify-content: space-between;
+    }
+
+    #botao {
+        display: none;
+    }
+
+    .item {
+        display: block;
     }
 
     h1, .item {
