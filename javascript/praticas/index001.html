@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            transition: background-color 1s;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            box-shadow: 0px 5px 5px #88888888;
+            align-self: stretch;
+            transition: background-color 1s;
+        }
+
+        header > h1, header > a {
+            padding: 10px;
+        }
+
+        header > a {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 1s;
+        }
+
+        header > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin: 20px;
+            margin-top: 50px;
+            width: 70vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 15px #88888888;
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 1s;
+        }
+
+        section {
+            align-self: center;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .darkmode {
+            background-color: darkblue;
+            color: white;
+            align-self: flex-end;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body id="body">
+    <header id="header">
+        <h1>Teste de Modo Escuro</h1>
+        <a href="#" id="op">Opções</a>
+    </header>
+    <main id="main">
+        <section>
+            <div class="darkmode" onclick="darkMode()" id="botao">Modo Escuro</div>
+
+            <h2 id="lili">Conteúdo</h2>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum est corporis nobis. Delectus cupiditate vel sequi quae aliquid eos autem inventore eveniet tenetur in? Soluta omnis itaque earum minus molestias!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quae deleniti iusto incidunt, itaque quos, quaerat eaque natus praesentium qui debitis, illum cupiditate cum dicta temporibus vel illo quibusdam odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid beatae quis repellat ullam necessitatibus dignissimos dolor! Voluptatibus sed magnam pariatur, consequuntur fuga maxime dignissimos officiis magni explicabo fugiat perferendis veniam.</p>
+        </section>
+    </main>
+
+    <script>
+        let darkmode = 0
+        header = document.getElementById('header')
+        body = document.getElementById('body')
+        main = document.getElementById('main')
+        op = document.getElementById('op')
+        botao = document.getElementById('botao')
+        lili = document.getElementById('lili')
+
+        let nome = prompt('Qual seu nome?')
+        lili.innerHTML = 'Boa noite, ' + nome
+
+        function darkMode(){
+            darkmode = darkmode + 1
+            if(darkmode % 2 == 0){
+                whiteTheme()
+            }
+            else {
+                blackTheme()
+            }
+        }
+
+        function whiteTheme() {
+            header.style.background = 'white'
+            body.style.background = 'white'
+            main.style.background = 'white'
+            header.style.color = 'black'
+            body.style.color = 'black'
+            main.style.color = 'black'
+            op.style.background = 'black'
+            op.style.color = 'white'
+            botao.style.background = 'darkblue'
+            botao.innerHTML = 'Modo Escuro'
+        }
+
+        function blackTheme() {
+            header.style.background = 'black'
+            body.style.background = 'black'
+            main.style.background = 'black'
+            header.style.color = 'white'
+            body.style.color = 'white'
+            main.style.color = 'white'
+            main.style.box = '0px 0px 8px #ffffff60'
+            op.style.background = 'white'
+            op.style.color = 'black'
+            botao.style.background = 'blue'
+            botao.innerHTML = 'Modo Claro'
+        }
+    </script>
+</body>
+</html>
