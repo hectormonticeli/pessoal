@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <style>
+        body {
+            font: normal 1em Arial;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgb(0,0,0,0.3);
+            background-color: wheat;
+        }
+
+        h1 {
+            margin: 30px;
+            font-size: 3em;
+        }
+
+        section {
+            display: inline-block;
+            background-color: white;
+            border-radius: 10px;
+            color: black;
+            text-shadow: none;
+            width: 600px;
+            box-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+
+            text-align: center;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        div#img {
+            margin: 10px;
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: black;
+        }
+
+        p#rodape {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Hora do Dia</h1>
+    <section>
+        <p id="horas">Agora são </p>
+        <div id="img"></div>
+    </section>
+    <p id="rodape">&copy; CursoemVideo</p>
+
+    <script>
+        var hora = new Date()
+        var hora = hora.getHours()
+        var img = window.document.querySelector('div#img')
+        var frase = window.document.querySelector('p#horas')
+        var fundo = window.document.querySelector('body')
+
+        frase.innerHTML += `${hora} horas`
+
+        if (hora < 12){
+            img.style.background += 'url(imagens/manha.jpg)'
+            img.style.backgroundSize = 'cover'
+            fundo.style.backgroundColor = 'wheat'
+        } else if (hora < 18) {
+            img.style.background += 'url(imagens/tarde.jpg)'
+            img.style.backgroundSize = 'cover'
+            fundo.style.backgroundColor = '#806050'
+        } else {
+            img.style.background += 'url(imagens/noite.jpg)'
+            img.style.backgroundSize = 'cover'
+            fundo.style.backgroundColor = '#505050'
+        }
+    </script>
+</body>
+
+</html>

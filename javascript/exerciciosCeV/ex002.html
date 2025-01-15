@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <style>
+        body {
+            font: normal 1em Arial;
+            background-color: dodgerblue;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        section {
+            text-align: start;
+            display: inline-block;
+            color: black;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgb(0,0,0,0.4);
+            
+            width: 500px;
+        }
+
+        div#res {
+            padding-top: 15px;
+        }
+
+        div#img {
+            margin-top: 10px;
+            display: none;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: black;
+
+        }
+
+        p#rodape {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Verificador de idade</h1>
+    <section>
+        <p>Ano de nascimento: <input type="number" name="ano" id="ano"></p>
+        <p>Sexo: <input type="radio" name="sexo" id="masc" value="M">Masculino <input type="radio" name="sexo" id="femi" value="F">Feminino</p>
+        <input type="button" value="Verificar" onclick="verificar()">
+
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
+            <div id="img"></div>
+        </div>
+    </section>
+    <p id="rodape">&copy; CursoemVideo</p>
+
+    <script>
+        function verificar(){
+            var img = window.document.querySelector('div#img')
+            var res = window.document.querySelector('div#res')
+            var txt = window.document.querySelector('#res>p')
+            var homem = window.document.getElementById('masc').checked
+            var mulher = window.document.getElementById('femi').checked
+            var born = Number(window.document.querySelector('input#ano').value)
+
+            var agora = new Date()
+            var ano = Number(agora.getFullYear())
+            var idade = ano - born
+
+            if(born == 0 || (!homem && !mulher)) {
+                window.alert('Informe os dados corretamente!')
+            } else {
+
+                img.style.display = 'inline-block'
+                res.style.textAlign = 'center'
+
+                if (homem) {
+
+                    txt.innerHTML = `<p>Verificamos um Homem de ${idade} anos</p>`
+
+                    if (idade < 18) {
+                        img.style.backgroundImage = 'url(imagens/kidboy.jpg)'
+                    } else if (idade < 60) {
+                        img.style.backgroundImage = 'url(imagens/man.jpg)'
+                    } else {
+                        img.style.backgroundImage = 'url(imagens/oldman.jpg)'
+                    }
+
+                } else if (mulher) {
+
+                    txt.innerHTML = `Verificamos uma Mulher de ${idade} anos`
+
+                    if (idade < 18) {
+                        img.style.backgroundImage = 'url(imagens/kidgirl.jpg)'
+                    } else if (idade < 60) {
+                        img.style.backgroundImage = 'url(imagens/woman.jpg)'
+                    } else {
+                        img.style.backgroundImage = 'url(imagens/oldwoman.jpg)'
+                    }
+                }
+
+                img.style.backgroundSize = 'cover'
+            }
+        }
+    </script>
+
+</body>
+</html>
