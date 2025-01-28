@@ -1,0 +1,50 @@
+body {
+    background-color: lightblue;
+    height: 98vh;
+    width: 98vw;
+    font: normal 2em Arial;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    background-color: #404060;
+    color: white;
+    width: 400px;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px 2px rgb(0,0,0,0.3);
+}
+
+#display {
+    background-color: lightgray;
+    height: 100px;
+    text-align: end;
+    color: #303030;
+}
+
+#box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.button {
+    background-color: darkcyan;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    filter: brightness(85%)
+}
