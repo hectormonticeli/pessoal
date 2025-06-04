@@ -29,32 +29,94 @@
     </section>
   </main>
 
-  <section id="inicio" class="sobre">
-    <div class="container">
-      <h2>Quem sou eu</h2>
-      <p>Me chamo Hector, sou apaixonado por tecnologia, criatividade e aprendizado. Tenho interesse em áreas como desenvolvimento web, design digital e raciocínio lógico.</p>
+  <section id="quem-sou" class="secao">
+    <div class="content animar">
+        <div class="content">
+            <div class="texto">
+                <h2>Quem sou eu</h2>
+                <p>Me chamo Hector, sou apaixonado por tecnologia, criatividade e aprendizado. Tenho interesse em áreas como desenvolvimento web, design digital e raciocínio lógico.</p>
+            </div>
+            <div class="imagem">
+                <img src="assets/imagens/foto-perfil.jpeg" alt="Quem sou eu">
+            </div>
+        </div>
+    </div>
+  </section>
   
-      <h2>Onde moro</h2>
-      <p>Atualmente moro em [Sua Cidade, Estado], onde tenho desenvolvido minhas habilidades e estudado constantemente para crescer pessoal e profissionalmente.</p>
+  <section id="cidade" class="secao invertida">
+    <div class="content animar">
+        <div class="content">
+        <div class="imagem">
+            <img src="assets/imagens/sao-jose-dos-campos.jpg" alt="Cidade onde moro">
+        </div>
+        <div class="texto">
+            <h2>Onde moro</h2>
+            <p>Atualmente moro em [Sua Cidade, Estado], onde tenho desenvolvido minhas habilidades e estudado constantemente para crescer pessoal e profissionalmente.</p>
+        </div>
+        </div>
+    </div>
+  </section>
   
-      <h2>Minha trajetória escolar</h2>
-      <div class="escola">
-        <h3>Escola A (2010–2016)</h3>
-        <p>Foi onde dei meus primeiros passos na educação. Aprendi os fundamentos e comecei a desenvolver minha curiosidade natural.</p>
-      </div>
-      <div class="escola">
-        <h3>Escola B (2017–2022)</h3>
-        <p>Nessa fase aprofundei meu interesse em exatas e participei de diversas atividades extracurriculares, incluindo olimpíadas.</p>
-      </div>
-      <div class="escola">
-        <h3>Escola C (2023–Atual)</h3>
-        <p>Atualmente estudo aqui, onde continuo explorando programação, matemática e projetos pessoais com mais maturidade e foco.</p>
-      </div>
+  <section id="escola-a" class="secao">
+    <div class="content animar">
+        <div class="content">
+        <div class="texto">
+            <h2>Escola A (2010–2016)</h2>
+            <p>Foi onde dei meus primeiros passos na educação. Aprendi os fundamentos e comecei a desenvolver minha curiosidade natural.</p>
+        </div>
+        <div class="imagem">
+            <img src="assets/escola-a.png" alt="Escola A">
+        </div>
+        </div>
+    </div>
+  </section>
+  
+  <section id="escola-b" class="secao invertida">
+    <div class="content animar">
+        <div class="content">
+        <div class="imagem">
+            <img src="assets/escola-b.png" alt="Escola B">
+        </div>
+        <div class="texto">
+            <h2>Escola B (2017–2022)</h2>
+            <p>Nessa fase aprofundei meu interesse em exatas e participei de diversas atividades extracurriculares, incluindo olimpíadas.</p>
+        </div>
+        </div>
+    </div>
+  </section>
+  
+  <section id="escola-c" class="secao">
+    <div class="content animar">
+        <div class="content">
+        <div class="texto">
+            <h2>Escola C (2023–Atual)</h2>
+            <p>Atualmente estudo aqui, onde continuo explorando programação, matemática e projetos pessoais com mais maturidade e foco.</p>
+        </div>
+        <div class="imagem">
+            <img src="assets/escola-c.png" alt="Escola C">
+        </div>
+        </div>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 - Criado por Você</p>
   </footer>
+
+  <script>
+    const animar = document.querySelectorAll('.animar');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('ativo');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+  
+    animar.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
