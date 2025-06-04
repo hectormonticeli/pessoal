@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+@media (max-width: 768px) {
+    .sobre h2 {
+      font-size: 1.5rem;
+    }
+  
+    .sobre p,
+    .escola p {
+      font-size: 0.95rem;
+    }
+  }
+
 /* Reset básico */
 * {
     margin: 0;
@@ -33,7 +44,7 @@
     align-items: center;
   }
 
-  .logo-torche-img {
+  .torche-logo-img {
     height: 40px;
     object-fit: contain;
   }
@@ -104,3 +115,41 @@
       font-size: 1rem;
     }
   }
+
+  .sobre {
+    background-color: #f8f9fc;
+    padding: 4rem 2rem;
+  }
+  
+  .sobre .container {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .sobre h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #222;
+  }
+  
+  .sobre p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #444;
+  }
+  
+  .escola {
+    background-color: #ffffff;
+    border-left: 4px solid #0077cc;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 8px;
+  }
+  
+  .escola h3 {
+    margin-bottom: 0.5rem;
+    color: #0077cc;
+  }
+  
